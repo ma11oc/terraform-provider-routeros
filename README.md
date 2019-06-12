@@ -16,8 +16,6 @@ make
     ```bash
     mkdir -p /tmp/terraform/terraform.d/linux_amd64/plugins/
 
-    cd /tmp/terraform/
-
     cat > /tmp/terraform/main.tf << EOF
     provider "ros" {
       address = "127.0.0.1:8728"
@@ -45,7 +43,7 @@ make
     }
     EOF
     ```
-- copy `terraform-provider-routeros` in terraform's plugin directory
+- copy `terraform-provider-routeros` binary in terraform's plugin directory
     ```bash
     make install
     ```
